@@ -60,7 +60,7 @@ application {
 }
 
 pmd {
-    toolVersion = '7.15.0'
+    toolVersion = '7.16.0'
     ruleSetFiles = files 'pmd-ruleset.xml'
     ruleSets = [] // explicitly set to empty to avoid using default configuration
     ignoreFailures = false
