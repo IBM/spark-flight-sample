@@ -15,17 +15,15 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.0'
     compileOnly 'org.apache.spark:spark-sql_2.12:3.4.4'
 
-    testImplementation platform('org.junit:junit-bom:5.14.0')
+    testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testImplementation 'org.assertj:assertj-core:3.27.6'
     testImplementation 'org.mockito:mockito-core:5.20.0'
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
+compileJava {
+    options.release = 11
 }
 
 test {
@@ -75,7 +73,7 @@ spotless {
     }
     java {
         removeUnusedImports()
-        palantirJavaFormat('2.50.0').formatJavadoc(true)
+        palantirJavaFormat().formatJavadoc(true)
         formatAnnotations()
         licenseHeaderFile(file('license-header.txt'))
     }
