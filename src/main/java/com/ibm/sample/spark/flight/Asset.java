@@ -20,7 +20,7 @@ class Asset extends Entity {
      *
      * @return A project reference.
      */
-    public Project container() {
+    Project container() {
         return container;
     }
 }

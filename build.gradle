@@ -58,10 +58,11 @@ application {
 }
 
 pmd {
-    toolVersion = '7.20.0'
+    toolVersion = '7.21.0'
     ruleSetFiles = files 'pmd-ruleset.xml'
     ruleSets = [] // explicitly set to empty to avoid using default configuration
     ignoreFailures = false
+    consoleOutput = true
 }
 
 spotless {
