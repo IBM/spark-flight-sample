@@ -62,6 +62,7 @@ pmd {
     ruleSetFiles = files 'pmd-ruleset.xml'
     ruleSets = [] // explicitly set to empty to avoid using default configuration
     ignoreFailures = false
+    consoleOutput = true
 }
 
 spotless {

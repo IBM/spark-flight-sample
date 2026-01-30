@@ -21,7 +21,7 @@ class Entity {
      *
      * @return An asset type key.
      */
-    public String key() {
+    String key() {
         return key;
     }
 
@@ -30,7 +30,7 @@ class Entity {
      *
      * @return An asset ID.
      */
-    public String id() {
+    String id() {
         return id;
     }
 }
