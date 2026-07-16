@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.22.1'
-    compileOnly 'org.apache.spark:spark-sql_2.12:3.5.8'
+    compileOnly 'org.apache.spark:spark-sql_2.12:3.5.9'
 
     testImplementation platform('org.junit:junit-bom:6.1.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
