@@ -132,8 +132,10 @@ class OptionsBuilderTest {
         var options = builder.build();
 
         var actual = getFlightCommand(options).get("context").asText();
-        assertThat(actual).satisfiesAnyOf(value -> assertThat(value).isEqualTo("source"), value -> assertThat(value)
-                .isNull());
+        assertThat(actual)
+                .satisfiesAnyOf(
+                        value -> assertThat(value).isEqualTo("source"),
+                        value -> assertThat(value).isNull());
     }
 
     @Test
