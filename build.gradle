@@ -4,7 +4,7 @@ plugins {
     id 'pmd'
     id 'com.diffplug.spotless' version '8.10.4'
     id 'com.adarshr.test-logger' version '4.0.0'
-    id 'com.github.ben-manes.versions' version '0.65.0'
+    id 'com.github.ben-manes.versions' version '0.66.0'
 }
 
 repositories {
