@@ -14,6 +14,7 @@
     <exclude name="AtLeastOneConstructor"/>
     <exclude name="CommentDefaultAccessModifier"/>
     <exclude name="LocalVariableCouldBeFinal"/>
+    <exclude name="LocalVariableDeclarationShouldBeAtStartOfBlock"/>
     <exclude name="OnlyOneReturn"/>
     <exclude name="ShortClassName"/>
     <exclude name="ShortMethodName"/>
@@ -28,7 +29,7 @@
       <property name="nativePattern" value="[a-z][a-zA-Z0-9]*"/>
       <property name="junit3TestPattern" value="test[A-Z0-9][a-zA-Z0-9]*"/>
       <property name="junit4TestPattern" value="[a-z][a-zA-Z0-9_]*"/>
-      <property name="junit5TestPattern" value="[a-z][a-zA-Z0-9_]*"/>
+      <property name="junitJupiterTestPattern" value="[a-z][a-zA-Z0-9_]*"/>
     </properties>
   </rule>
   <rule ref="category/java/design.xml">

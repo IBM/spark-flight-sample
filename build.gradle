@@ -4,7 +4,7 @@ plugins {
     id 'pmd'
     id 'com.diffplug.spotless' version '8.11.0'
     id 'com.adarshr.test-logger' version '4.0.0'
-    id 'com.github.ben-manes.versions' version '0.67.0'
+    id 'io.github.ben-manes.versions' version '0.67.0'
 }
 
 repositories {
@@ -58,7 +58,7 @@ application {
 }
 
 pmd {
-    toolVersion = '7.28.0'
+    toolVersion = '7.29.0'
     ruleSetFiles = files 'pmd-ruleset.xml'
     ruleSets = [] // explicitly set to empty to avoid using default configuration
     ignoreFailures = false
